@@ -1,12 +1,12 @@
-//  Program to find the second maximum number in tyhe array
+//  Program to find the second maximum number in the array
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int arr[5] = {32, 54, 77, 76, 23};
-    int max1 = arr[0], max2 = arr[0];
+    int arr[5] = {54, 54, 54, 7, 23};
+    int max1 = -1, max2 = -1;
     int i = 0;
     int length = sizeof(arr) / sizeof(int);
 
@@ -18,7 +18,7 @@ int main()
             max1 = arr[i];
             i++;
         }
-        else if (arr[i] > max2)
+        else if (arr[i] > max2 && arr[i] != max1)
         {
             max2 = arr[i];
             i++;
@@ -28,7 +28,7 @@ int main()
             i++;
         }
     }
-    cout << "The maximum element in array is :" << max1;
+    cout << "The maximum element in array is :" << max1 << endl;
     cout << "The second maximum element inarray is :" << max2;
 
     return 0;
@@ -48,7 +48,7 @@ int main()
 //         cin>>arr[i];
 //     }
 
-//     int max1 = arr[0], max2 = arr[0];
+//     int max1 = -1, max2 = -1
 //     int i = 0;
 //     int length = sizeof(arr) / sizeof(int);
 
@@ -60,7 +60,7 @@ int main()
 //             max1 = arr[i];
 //             i++;
 //         }
-//         else if (arr[i] > max2)
+//         else if (arr[i] > max2 && arr[i]!=max1)
 //         {
 //             max2 = arr[i];
 //             i++;
