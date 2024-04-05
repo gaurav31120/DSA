@@ -1,0 +1,14 @@
+1.Cyclically rotate an array by one
+
+Third largest element
+https://www.geeksforgeeks.org/problems/third-largest-element/1?page=1&difficulty%255B%255D=-1&category%255B%255D=Arrays&sortBy=submissions
+
+
+Print an array in Pendulum Arrangement
+https://www.geeksforgeeks.org/problems/print-an-array-in-pendulum-arrangement4004/1?page=1&difficulty%255B%255D=-1&category%255B%255D=Arrays&sortBy=submissions
+
+
+Inverse Permutation
+https://www.geeksforgeeks.org/problems/inverse-permutation0344/1?page=1&difficulty%255B%255D=-1&category%255B%255D=Arrays&sortBy=submissions
+
+
