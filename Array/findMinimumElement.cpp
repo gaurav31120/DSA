@@ -1,12 +1,14 @@
 // Find the minimum element in the array
 
 #include <iostream>
+#include <limits.h>
 using namespace std;
 
 int main()
 {
     int arr[5] = {4, 6, 11, 2, 8};
-    int min = arr[0];
+    // int min = arr[0];
+    int min = INT_MAX; // this is better to use
     for (int i = 1; i < 5; i++)
     {
         if (min > arr[i])

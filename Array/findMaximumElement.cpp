@@ -1,11 +1,13 @@
 // Find the maximum element in the array
 
 #include <iostream>
+#include <limits.h>
 using namespace std;
 int main()
 {
     int arr[5] = {55, 32, 657, 217, 76};
-    int max = arr[0];
+    // int max = arr[0]; 
+    int max = INT_MIN;  // this is better to use
     for (int i = 1; i < 5; i++)
     {
         if (arr[i] > max)
