@@ -1,4 +1,4 @@
-// Find sum of elements in 2D array: Row wise
+// Find sum of elements in 2D array:Column wise
 
 #include <iostream>
 using namespace std;
@@ -9,13 +9,13 @@ int main()
     int m = 4, n = 3;
     int sum = 0;
 
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < m; j++)
         {
-            sum += arr[i][j];
+            sum += arr[j][i];
         }
     }
-    cout << "Sum Row wise is: " << sum << endl;
+    cout << "Sum Column wise is: " << sum << endl;
     return 0;
 }
