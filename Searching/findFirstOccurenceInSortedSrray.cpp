@@ -1,18 +1,18 @@
-// Binary Search ---- TC - O(logn)
+//  Find first occurence of a number in a sorted array
+// This can be done using binary search
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int arr[12] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-    int n = 12;
-    int target = 9;
-
-    int mid, start, end;
-    start = 0, end = n - 1;
-
-    cout << "The target element is found at index: ";
+    int arr[7] = {10, 20, 30, 30, 30, 40, 50};
+    int n = 7;
+    int target = 30;
+    int start, mid, end, ans;
+    start = 0;
+    end = n - 1;
+    ans = -1;
 
     while (start <= end)
     {
@@ -22,8 +22,9 @@ int main()
 
         if (arr[mid] == target)
         {
-            cout << mid << endl;
-            return 0;
+            ans = mid;
+            mid--;
+            end = mid;
         }
         else if (arr[mid] > target)
         {
@@ -31,11 +32,13 @@ int main()
             end = mid;
         }
         else
-        { // arr[mid] < target
+        {
             mid++;
             start = mid;
         }
     }
+    cout << "The required index for first occurence is: " << endl;
 
+    cout << ans;
     return 0;
 }
