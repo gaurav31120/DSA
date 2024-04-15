@@ -14,7 +14,7 @@ int main()
 
     cout << "The target element is found at index: ";
 
-    while (start < end)
+    while (start <= end)
     {
         mid = (start + end) / 2;
         if (arr[mid] == target)
