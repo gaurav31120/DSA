@@ -8,14 +8,24 @@ int main()
     int arr[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     int row = 3, col = 3;
     int i, j;
+    // Method 1
+    //  for (i = 0; i < row; i++)
+    //  {
+    //      for (j = 0; j < col; j++)
+    //      {
+    //          if (i < j)
+    //          {
+    //              swap(arr[i][j], arr[j][i]);
+    //          }
+    //      }
+    //  }
+
+    // Method 2
     for (i = 0; i < row; i++)
     {
-        for (j = 0; j < col; j++)
+        for (j = i; j < col; j++)
         {
-            if (i < j)
-            {
-                swap(arr[i][j], arr[j][i]);
-            }
+            swap(arr[i][j], arr[j][i]);
         }
     }
 
