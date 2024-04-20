@@ -6,23 +6,51 @@
 #include <iostream>
 using namespace std;
 
-// Method 1- using linear search
+// Method 2 - using binary search
+
 int main()
 {
-    int value = 167;
-
-    for (int i = 0; i <= value; i++)
+    int num = 576, mid, result = -1;
+    int left = 0, right = num;
+    while (left <= right)
     {
-        if (i * i == value)
+        mid = left + (right - left) / 2;
+        if (mid * mid == num)
         {
-            cout << i;
-            return 0;
+            result = mid;
+            break;
         }
-        else if (i * i > value)
+        else if (mid * mid > num)
         {
-            cout << i - 1;
-            return 0;
+            right = mid - 1;
+        }
+        else if (mid * mid < num)
+        { //(mid * mid < num)
+            left = mid + 1;
+            result = mid;
         }
     }
+    cout << "The square root is: " << result << endl;
     return 0;
 }
+
+// Method 1- using linear search
+//  int main()
+//  {
+//      int value = 167;
+
+//     for (int i = 0; i <= value; i++)
+//     {
+//         if (i * i == value)
+//         {
+//             cout << i;
+//             return 0;
+//         }
+//         else if (i * i > value)
+//         {
+//             cout << i - 1;
+//             return 0;
+//         }
+//     }
+//     return 0;
+// }
