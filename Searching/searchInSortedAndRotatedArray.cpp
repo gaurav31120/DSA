@@ -12,12 +12,12 @@ int main()
 {
     int arr[10] = {7, 8, 9, 10, 1, 2, 3, 4, 5, 6};
     int n = 10;
-    int target = 3;
+    int target = 8;
     int result = -1;
 
     int pivot = PivotElement(arr, n);
 
-    cout << "The pivot element is: " << pivot << endl;
+    cout << "The pivot element is: " << arr[pivot] << endl;
     ;
 
     if (target >= arr[0])
@@ -33,7 +33,14 @@ int main()
         result = pivot;
     }
 
-    cout << "The searched element is: " << arr[result] << endl;
+    if (result == -1)
+    {
+        cout << "The searched element is not found. " << endl;
+    }
+    else
+    {
+        cout << "The searched element is: " << arr[result] << endl;
+    }
 
     return 0;
 }
@@ -68,7 +75,7 @@ int PivotElement(int arr[], int n)
             left = mid + 1;
         }
     }
-    
+
     return pivot;
 }
 
