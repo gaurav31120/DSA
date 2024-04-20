@@ -1,1 +1,7 @@
 Here, I will learn and make notes of DSA and solve multiple coding problems.
+
+Leetcode
+
+Searching
+33. Search is Rotated Sorted Array - Hard
+69. Sqrt(x)
