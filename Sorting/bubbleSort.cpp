@@ -1,4 +1,4 @@
-//  Bubble sort
+//  Bubble sort ----  TC - O(n ^ 2)
 
 // Bubble sort in increasing order
 #include <iostream>
@@ -9,9 +9,9 @@ int bubbleSort(vector<int> &v)
 {
     int n = v.size();
 
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n - 1; i++) // iterations - n-1
     {
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < n - i - 1; j++) // comparisions - n-i-1
         {
             if (v[j] > v[j + 1])
             {
@@ -33,9 +33,9 @@ int print(vector<int> &v)
 // int bubbleSortDecreasingOrder(vector<int> &v)
 // {
 //     int n = v.size();
-//     for (int i = 0; i < n; i++)
+//     for (int i = 0; i < n; i++)  // iterations - n-1
 //     {
-//         for (int j = 0; j < n - i - 1; j++)
+//         for (int j = 0; j < n - i - 1; j++)  // comparisions - n-i-1
 //         {
 //             if (v[j] < v[j + 1])
 //             {
