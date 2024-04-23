@@ -1,4 +1,4 @@
-// Selection sort - TC - O(n)
+// Selection sort - TC - O(n^2)
 
 #include <iostream>
 #include <vector>
