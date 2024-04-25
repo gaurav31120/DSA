@@ -1,4 +1,4 @@
-// Find the odd occuring elements using binary search ---- TC - O(n)
+// Find the odd occuring elements using binary search ---- TC - O(logn)
 
 #include <iostream>
 #include <vector>
