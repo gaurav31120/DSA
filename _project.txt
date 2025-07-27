@@ -5,3 +5,4 @@ Here, I will put all code in sequence.
 2 Array Basics
 3 Taking inputs
 4 Printing output
+5 Pass functions in array
