@@ -4,3 +4,4 @@ Here, I will put all code in sequence.
 ------------------------------ Array --------------------------------
 2 Array Basics
 3 Taking inputs
+4 Printing output
