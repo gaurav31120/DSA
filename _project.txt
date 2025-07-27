@@ -3,3 +3,4 @@ Here, I will put all code in sequence.
 1 Info for DSA
 ------------------------------ Array --------------------------------
 2 Array Basics
+3 Taking inputs
