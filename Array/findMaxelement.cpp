@@ -6,18 +6,19 @@ using namespace std;
 
 int findMax(int arr[], int size)
 {
-    int max = INT_MIN;
+    int maxAns = INT_MIN;
     // int max = -7567;
 
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] > max)
+        if (arr[i] > maxAns)
         {
-            max = arr[i];
+            maxAns = arr[i];
         }
+        // maxAns = max(arr[i], maxAns); // max inbuild function returns maximum element
     }
 
-    cout << "Maximum element is: " << max;
+    cout << "Maximum element is: " << maxAns;
 
     return 0;
 }
