@@ -8,3 +8,16 @@ EA - Ending address
 
 int arr[5];
 fill(arr, arr+4, 6) // {6,6,6,6}
+
+------------------------------------------------------------
+// How array values calculates with address
+arr[i] = value present at  [Base address + size * i]
+arr[i] --> value at (arr + (size * i)) -- (same as i[arr])
+
+arr[i] == i[arr]
+
+
+arr[i] --> *(arr + i ) -- value present at address(arr + i)
+i[arr] --> *(i + arr ) -- value present at address(i + arr)
+
+---------------------------------------------------------------
