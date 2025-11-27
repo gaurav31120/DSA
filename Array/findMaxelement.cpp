@@ -29,3 +29,5 @@ int main()
     int size = 5;
     findMax(arr, size);
 }
+
+// TC = O(n)
