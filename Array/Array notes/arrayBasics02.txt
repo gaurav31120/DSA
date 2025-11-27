@@ -1,0 +1,10 @@
+// Array fill function 
+fills each index of array with same given value.
+
+Syntax-- fill(SA, EA, value);
+SA -- Starting address or BA -- Base address (both are same),
+EA - Ending address
+
+
+int arr[5];
+fill(arr, arr+4, 6) // {6,6,6,6}
