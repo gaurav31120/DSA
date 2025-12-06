@@ -14,22 +14,19 @@ public:
     }
 };
 
-void printLL(Node *head)
+void printLLRecursive(Node *head)
 {
     if (head == NULL)
     {
         return;
     }
-    else
-    {
-        cout << head->data;
+    cout << head->data;
 
-        while (head->next != NULL)
-        {
-            head = head->next;
-            cout << " -> " << head->data;
-        }
+    if (head->next != NULL)
+    {
+        cout << " -> ";
     }
+    printLLRecursive(head->next);
 }
 
 int main()
@@ -38,8 +35,9 @@ int main()
     head->next = new Node(2);
     head->next->next = new Node(3);
     head->next->next->next = new Node(4);
+    head->next->next->next->next = new Node(5);
 
-    printLL(head);
+    printLLRecursive(head);
 
     return 0;
 }
@@ -47,4 +45,4 @@ int main()
 // O/P - 1 -> 2 -> 3 -> 4
 
 // TC = O(n)
-// SC = O(1)
+// SC = O(n) because of recursive stack space.

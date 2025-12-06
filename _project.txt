@@ -9,3 +9,4 @@ List of coding questions solved:
 ------------------------------Linked list-----------------------------------
 Easy
 1 Print LL
+2 Print LL Recursive
