@@ -15,3 +15,4 @@ Easy
 5 Search Element in LL
 6 Search Element in LL recursive
 7 Insertion at start of LL
+8 Insertion at end of LL
