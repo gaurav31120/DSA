@@ -14,3 +14,4 @@ Easy
 4 Length of LL recursive
 5 Search Element in LL
 6 Search Element in LL recursive
+7 Insertion at start of LL
