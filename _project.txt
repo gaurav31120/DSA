@@ -2,20 +2,21 @@ List of coding questions solved:
 
 ------------------------------Array-----------------------------------
 Easy
-            1 Find target element
-            2 Find max element
-            3 Count 0's and 1's
-            4 Two pointer approach
-Leetcode -- 5 Single number      
+                1 Find target element
+                2 Find max element
+                3 Count 0's and 1's
+                4 Two pointer approach
+Leetcode 136  - 5 Single number   
+                6 Sort 0 and 1
 
 ------------------------------Linked list-----------------------------------
 Easy
-            1 Print LL
-            2 Print LL Recursive
-            3 Length of LL iterative
-            4 Length of LL recursive
-            5 Search Element in LL
-            6 Search Element in LL recursive
-            7 Insertion at start of LL
-            8 Insertion at end of LL
-            9 Insertion at specific position of LL
+                1 Print LL
+                2 Print LL Recursive
+                3 Length of LL iterative
+                4 Length of LL recursive
+                5 Search Element in LL
+                6 Search Element in LL recursive
+                7 Insertion at start of LL
+                8 Insertion at end of LL
+                9 Insertion at specific position of LL
